@@ -1,0 +1,185 @@
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.transition-200 {
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.menu {
+  overflow: hidden;
+  animation: showMenu 0.5s ease-in-out;
+}
+
+@keyframes showMenu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 400px;
+  }
+}
+
+.history_left {
+  transform-origin: center right;
+  animation: showMenu_left 0.8s ease;
+}
+
+.history_right {
+  transform-origin: center left;
+  animation: showMenu_right 0.8s ease;
+}
+@keyframes showMenu_left {
+  from {
+    transform: rotateY(100deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes showMenu_right {
+  from {
+    transform: rotateY(100deg);
+  }
+
+  to {
+    transform: rotateY(0deg);
+  }
+}
+
+.table-variation_pr thead tr {
+  background-color: var(--color-active);
+  color: white;
+}
+
+.table-variation_pr thead tr th,
+.table-variation_pr tbody tr td {
+  padding: 16px;
+  min-height: 72px;
+  height: auto;
+  text-align: left;
+  word-break: inherit;
+  vertical-align: top;
+  border: 1px solid var(--border-color);
+}
+
+.table-variation_pr thead tr th {
+  font-size: 16px;
+}
+
+.table-variation_pr tbody tr td {
+  font-size: 14px;
+}
+
+.table-variation_pr thead tr th:first-child,
+.table-variation_pr tbody tr td:first-child {
+  width: 33%;
+}
+
+.table-variation_pr thead tr th,
+.table-variation_pr tbody tr td {
+  width: 11.7%;
+}
+
+.showCategory:hover .cateChild {
+  display: flex !important;
+}
+
+
+/* quill editor style */
+.quill * {
+  font-family: "Roboto" !important;
+}
+
+.ql-container {
+  height: 500px !important;
+}
+
+/* quill editor */
+.ql-editor h1,
+.ql-editor h2 {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.ql-editor h1 {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+.ql-editor h2 {
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+
+.ql-editor .ql-size-small {
+  font-size: 0.75em;
+}
+
+.ql-editor .ql-size-large {
+  font-size: 1.5em;
+}
+
+.ql-editor .ql-size-huge {
+  font-size: 2.5em;
+}
+
+.ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+
+.ql-editor img {
+  display: inline-block;
+}
+
+.ql-editor .ql-align-left {
+  text-align: left;
+}
+
+.ql-editor .ql-align-center {
+  text-align: center;
+}
+
+.ql-editor .ql-align-right {
+  text-align: right;
+}
+
+.ql-editor .ql-align-justify {
+  text-align: justify;
+}
+
+.ql-editor .hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.ql-editor ul,
+ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.ql-editor ul {
+  list-style-type: disc;
+}
+
+.ql-editor ol {
+  list-style-type: decimal;
+}
